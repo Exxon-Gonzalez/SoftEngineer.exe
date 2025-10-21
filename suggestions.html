@@ -8,6 +8,7 @@
     <meta name="keywords" content="pdf, free books, programming, cybersecurity, encryption, software engineering, linux, hacking, operating systems, artificial intelligence, download, free download, mediafire, mega, google drive">
     <title>SoftEngineer.exe - Free programming PDF books</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <header>
@@ -38,8 +39,36 @@
         <img id="categoryImage" src="src/tabs titles/Suggestions.webp" alt="Cat" />
     </div>
 
-    <main>
-        <h2>WORK IN PROGRESS</h2>
+<main>
+    <section class="suggestions-section">
+        <h3>💬 Suggestions or bug report</h3>
+        <form id="suggestionForm" class="suggestion-form" onsubmit="handleSubmit(event)">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name" placeholder="Insert your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Insert your email" required>
+
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" placeholder="Leave your comment here" required></textarea>
+
+            <div class="file-upload">
+            <label for="image" class="file-label">
+                <span class="file-icon">🖼️</span>
+                <span id="fileText">Attach screenshot</span>
+            </label>
+            <input type="file" id="image" name="image" accept="image/png, image/jpeg, image/jpg, image/webp, image/gif" hidden>
+            </div>
+
+                <!-- Google reCAPTCHA -->
+            <div class="g-recaptcha" data-sitekey="6Lft4vErAAAAAJtTg27qYzL2AkSROtRc0sMs0VGQ"></div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="formMessage" class="form-message"></p>
+    </section>
+</main>
 
 
 </body>

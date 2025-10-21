@@ -362,3 +362,103 @@ text-align: center;
 .ad-under-bookcontainer {
 text-align: center;
 }
+
+/*Suggestions styles*/
+.suggestions-section {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.suggestions-section h3 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.suggestion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.suggestion-form input,
+.suggestion-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #2a2a2a;
+    color: #fff;
+    resize: none;
+}
+
+.suggestion-form button {
+    background: #0078ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.suggestion-form button:hover {
+    background: #005fcc;
+}
+
+.form-message {
+    text-align: center;
+    margin-top: 10px;
+    color: #00ff88;
+}
+
+.file-upload {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.file-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #387e44;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.file-label:hover {
+  background: #38ff59;
+}
+
+.file-label:active {
+  transform: scale(0.97);
+}
+
+.file-icon {
+  font-size: 1.2rem;
+}
+
+#fileText {
+  font-size: 0.95rem;
+}
+
+.file-label.uploaded {
+  background: #00b894;
+}
+
+.file-label.uploaded::after {
+  content: " ✓";
+  font-weight: bold;
+}
+
+.g-recaptcha {
+    margin: 10px auto;
+    display: table;
+}

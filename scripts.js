@@ -175,3 +175,17 @@ function getCategoryFromURL() {
 document.addEventListener("DOMContentLoaded", () => {
 updateCategoryImage(getCategoryFromURL());
 });
+
+/*image attachment*/
+document.getElementById("image").addEventListener("change", function() {
+  const fileLabel = document.querySelector(".file-label");
+  const fileText = document.getElementById("fileText");
+
+  if (this.files.length > 0) {
+    fileText.textContent = this.files[0].name;
+    fileLabel.classList.add("uploaded");
+  } else {
+    fileText.textContent = "Attach screenshot (optional)";
+    fileLabel.classList.remove("uploaded");
+  }
+});
