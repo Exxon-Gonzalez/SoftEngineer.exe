@@ -16,11 +16,13 @@ header {
 }
 
 .logo {
-    width: 650px; /* Width of the logo */
-    height: auto; /* Maintain aspect ratio */
-    margin: -15px; /* Margin for spacing */
-    
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
+
 
 nav{
     background-color: #1f202c; /* Light gray background */
@@ -461,4 +463,129 @@ text-align: center;
 .g-recaptcha {
     margin: 10px auto;
     display: table;
+}
+
+/*Diseño responsivo en distintos dispositivos*/
+
+/* Teléfonos pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .logo {
+    max-width: 90%;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-container {
+    flex-direction: column;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .instructions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instructions img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .category-banner img,
+  .search-banner img {
+    width: 60%;
+  }
+
+  .book h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:rgb(255, 88, 11);
+      transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .book-image {
+    width: 50%;
+    height: auto;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Required for margin auto to work */
+  }
+}
+
+/* Teléfonos medianos y grandes (481px a 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book{
+    padding: 0.5em;
+  }
+
+    .book h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    color:rgb(255, 88, 11);
+      transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .book-image {
+    width: 50%;
+    height: auto;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Required for margin auto to work */
+  }
+
+  .DescriptionJustified {
+    text-align: justify;
+    font-size: 12px;
+
+  }
+
+  .PubDateBy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    max-width: 90%;
+  }
+
+  .instructions {
+    flex-direction: column;
+  }
+
+  .instructions img {
+    width: 70%;
+  }
+}
+
+/* Tablets (768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .book-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .instructions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .instructions img {
+    width: 40%;
+  }
+
+  .search-container {
+    max-width: 80%;
+  }
+
 }
