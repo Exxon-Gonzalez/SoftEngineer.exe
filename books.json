@@ -1,4 +1,17 @@
-[    
+[   
+    {
+    "title": " Linux System Administrator for the 2020s",
+    "author": "Kenneth Hitchcock",
+    "category": "OS",
+    "frontpage": "LinuxSystemAdministrationForThe2020s.png",
+    "publisher": "APress",
+    "release date": "February 23, 2022",
+    "pages number":"268",
+    "description": "Build and manage large estates, and use the latest OpenSource management tools to breakdown a problem. This book is divided into 4 parts all focusing on the distinct aspects of Linux system administration. The book begins by reviewing the foundational blocks of Linux and can be used as a brief summary for new users to Linux and the OpenSource world. Moving on to Part 2 you'll start by delving into how practices have changed and how management tooling has evolved over the last decade. You’ll explore new tools to improve the administration experience, estate management and its tools, along with automation and containers of Linux. Part 3 explains how to keep your platform healthy through monitoring, logging, and security. You'll also review advanced tooling and techniques designed to resolve technical issues. The final part explains troubleshooting and advanced administration techniques, and less known methods for resolving stubborn problems.",
+    "download link": "https://pastebin.com/HQiHunGH",
+    "publish date":"2025-11-15",
+    "shared by": "Drolord22"
+    },
     {
     "title": "Modern C",
     "author": "Jens Gustedt",
