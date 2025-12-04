@@ -1,3 +1,4 @@
+// Comentario X
 let books = [];
 const booksPerPage = 12;
 let currentPage = parseInt(new URLSearchParams(window.location.search).get("page")) || 1;
