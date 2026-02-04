@@ -1,5 +1,19 @@
 [   
     {
+    "title": " Artificial Unintelligence, How computers misunderstand the world",
+    "author": "Meredith Broussard",
+    "category": "AI",
+    "frontpage": "ArtificialUnintelligence.png",
+    "publisher": "The MIT Press",
+    "release date": "April 27, 2018",
+    "pages number":"266",
+    "description": "In Artificial Unintelligence, Meredith Broussard argues that our collective enthusiasm for applying computer technology to every aspect of life has resulted in a tremendous amount of poorly designed systems. We are so eager to do everything digitally—hiring, driving, paying bills, even choosing romantic partners—that we have stopped demanding that our technology actually work. Broussard, a software developer and journalist, reminds us that there are fundamental limits to what we can (and should) do with technology. With this book, she offers a guide to understanding the inner workings and outer limits of technology—and issues a warning that we should never assume that computers always get things right.",
+    "download link": "https://pastebin.com/JJLpn9wG",
+    "publish date":"2026-02-03",
+    "shared by": "Drolord22"
+    },
+
+    {
     "title": " Linux System Administrator for the 2020s",
     "author": "Kenneth Hitchcock",
     "category": "OS",
